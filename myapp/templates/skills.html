@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<br>
+<div class="card" style="width: 18rem;">
+    <div class="card-body">
+      <div class="dropdown dropright">
+        <button class="btn btn-danger btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" title="More Info" aria-haspopup="true" aria-expanded="false"
+        style="margin-left: 180px;">
+          All Skills
+        </button>
+        <div class="dropdown-menu dropdown-menu-lg-right" aria-labelledby="dropdownMenuButton">
+
+            <a class="dropdown-item" href="#maradona" title="The Maradona Turn">1.MaradonaTurn</a>
+            <a class="dropdown-item" href="#cruffy" title="The Cruyff Turn">2.CruffyTurn</a>
+            <a class="dropdown-item" href="#Bicycle" title="3.Bicycle">3.The Scissor or Bicycle Kick</a>
+            <a class="dropdown-item" href="#Elastico" title="The Elastico">4.The Elastico</a>
+            <a class="dropdown-item" href="#Pullback" title="The Pullback V">5.The Pullback V</a>
+            <a class="dropdown-item" href="#Rainbow" title="The Rainbow or the Okocha Flick">6.The Rainbow or the Okocha Flick</a>
+            <a class="dropdown-item" href="#Knuckleball" title="The Knuckleball Free Kick">7. The Knuckleball Free Kick</a>
+            <a class="dropdown-item" href="#Scorpion" title="The Scorpion Kick">8.The Scorpion Kick</a>
+            <div class="dropdown-divider"></div>
+            <a href="#bottom" class="dropdown-item active" title="GoTo Bottom">GoTo Bottom</a>
+        </div>
+    </div>
+        <img src="{% static '/images/maradona.jpg' %}" id="maradona" class="card-img-top" alt="maradona skill" height=130px>
+        <h5 class="card-title">1. The Maradona Turn</h5>
+        <p class="card-text">The Maradona Turn is something every player practices and its beauty comes from the simplicity of it.</p>
+        <a href="http://www.youtube.com" target="_blank" class="btn btn-info btn-sm" title="Let's Go">Check Clip</a>
+        <hr>
+        <img src="{% static '/images/cruffy.jpg' %}" id="cruffy" class="card-img-top" alt="cuffy skill" height=150px>
+        <h5 class="card-title">2. The Cruyff Turn</h5>
+        <p class="card-text">Johan Cruffy was one of the best technical players ever to play the game. Aside from winning virtually every trophy going and creating a footballing legacy, his crowning achievement was the invention of the Cruyff Turn. It’s now one of the first skills that children are taught and that’s the genius of Cruyff.</p>
+        <a href="http://www.youtube.com" target="_blank" class="btn btn-info btn-sm" title="Let's Go">Check Clip</a>
+        <hr>
+        <img src="{% static '/images/bicycle.png' %}" id="Bicycle" class="card-img-top" alt="scissor skill" height=200px>
+        <h5 class="card-title">3. The Scissor or Bicycle Kick</h5>
+        <p class="card-text">There isn’t a more spellbinding way to score a goal than with a scissor kick. The sight of a striker flinging themselves backwards into the air with all the grace of an Olympic gymnast before catching a cross well above head height with his foot and powering it into the back of the net is simply spectacular.</p>
+        <a href="http://www.youtube.com" target="_blank" class="btn btn-info btn-sm" title="Let's Go">Check Clip</a>
+        <hr>
+        <img src="{% static '/images/elastico.jpg' %}" id="Elastico" class="card-img-top" alt="elastico skill" height="150px">
+        <h5 class="card-title">4. The Elastico</h5>
+        <p class="card-text">There isn’t a more spellbinding way to score a goal than with a scissor kick. The sight of a striker flinging themselves backwards into the air with all the grace of an Olympic gymnast before catching a cross well above head height with his foot and powering it into the back of the net is simply spectacular.</p>
+        <a href="http://www.youtube.com" target="_blank" class="btn btn-info btn-sm" title="Let's Go">Check Clip</a>
+        <hr>
+        <img src="{% static '/images/pullback.jpg' %}" id="Pullback" class="card-img-top" alt="pullback skill" height="150px">
+        <h5 class="card-title">5. The Pullback V</h5>
+        <p class="card-text">You might not have heard of the pullback V, but you’ve almost certainly used it at some point as it more of a natural movement. This is the move whereby you stop the ball, drag it back and then flick it behind your standing leg to release a teammate into space, all done in the shape of a V. The great Hungarian Ferenc Puskas is credited with inventing it during his 1950s heyday.</p>
+        <a href="http://www.youtube.com" target="_blank" class="btn btn-info btn-sm" title="Let's Go">Check Clip</a>
+        <hr>
+        <img src="{% static '/images/rainbow.jpg' %}" id="Rainbow" class="card-img-top" alt="rainbow skill" height="150px">
+        <h5 class="card-title">6. The Rainbow or the Okocha Flick</h5>
+        <p class="card-text">Nobody really knows where the Rainbow originated from, but it was Jay-Jay Okocha who brought it to the Premier League on a regular basis during his time with Bolton Wanderers. It involves using one foot to roll the ball up the back of the other leg and then flick it over an opponent’s head before collecting it on the other side. This is the ultimate piece of showboating and you will often see it in 5-a-side games or street football.</p>
+        <a href="http://www.youtube.com" target="_blank" class="btn btn-info btn-sm" title="Let's Go">Check Clip</a>
+        <hr>
+        <img src="{% static '/images/Knuckleball.jpg' %}" id="Knuckleball" class="card-img-top" alt="Knuckleball skill" height="150px">
+        <h5 class="card-title">7. The Knuckleball Free Kick</h5>
+        <p class="card-text">Scoring a direct free kick is quite a skill in itself, but there is no better technique for doing it than the Knuckleball. Perfected by Cristiano Ronaldo, by striking the ball straight on the valve you can generate the perfect combination of power, uplift and dip without the ball moving, spinning or swerving an inch. It’s impossible for a goalkeeper to save and mesmerising to watch.</p>
+        <a href="http://www.youtube.com" target="_blank" class="btn btn-info btn-sm" title="Let's Go">Check Clip</a>
+        <hr>
+        <img src="{% static '/images/ScorpionKick.jpg' %}" id="Scorpion" class="card-img-top" alt="ScorpionKick skill" height="150px">
+        <h5 class="card-title">8. The Scorpion Kick</h5>
+        <p class="card-text">When Colombia played England at Wembley in 1995, the South American nation’s goalkeeper Rene Higuita wrote himself into footballing folklore when producing a scorpion kick save, see it here. Of course, it was completely unnecessary but the fact it’s still talked about to this day shows just what a memorable piece of skill it was.</p>
+        <a href="http://www.youtube.com" target="_blank" class="btn btn-info btn-sm" title="Let's Go">Check Clip</a>
+        <hr>
+        <a href="#top" id="bottom" class="btn btn-danger" style="margin-right: 10px;width: 100%;">GoTo Top</a>
+    </div>
+  </div>
+{% endblock %}

@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<br>
+
+<div class="card" style="width: 18rem;">
+    <img src="{% static '/images/football_overview.jpg' %}" class="card-img-top" alt="main">
+    <div class="card-body">
+      <div class="dropdown dropright">
+        <button class="btn btn-danger btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" title="More Info" aria-haspopup="true" aria-expanded="false"
+        style="margin-left: 178px;">
+          Shortcuts
+        </button>
+        <div class="dropdown-menu dropdown-menu-lg-right" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#size" title="GoTo Team Size">Team Size</a>
+            <a class="dropdown-item" href="#equipment" title="GoTo Equipments">Equipments</a>
+            <a class="dropdown-item" href="#pnp" title="GoTo PnP">Players & Positions</a>
+            <div class="dropdown-divider"></div>
+            <a href="#bottom" class="dropdown-item active" title="GoTo Bottom">GoTo Bottom</a>
+        </div>
+    </div>
+
+      <h5 class="card-title">The Game</h5>
+      <p class="card-text">Football is the most popular sport worldwide.It is also called &quot;soccer&quot; in some countries. It is an outdoor game that requires absolute athleticism as players have to hustle and run across the field with the ball throughout the game. The name of the sport was derived by the way it is played. This sport took its shape in the 18<sup>th</sup> century.</p>
+      <hr>
+      <h5 id="size" class="card-title">Team Size</h5>
+      <p>Be it a national team or international club, there should be only 11 players per team on the field while playing the game. One of them is the goalkeeper, who is crucial to the success of the team. He is skilled to intercept the ball before a goal is scored by a player of the opponent team. There are additional players seated on the side as substitutes to replace on-field players. Coach is an integral part of the team who coaches every member of the team, lays plans and strategies to score goals and win matches.</p>
+      <hr>
+      <img src="{% static '/images/equipments.jfif' %}" alt="equipments">
+      <h3 id="equipment" class="card-title">Equipments</h3>
+      <p>Football involves a lot of running around the field with the ball. The players also don’t require sporting much gear to play the game. Cleat shoes, socks, shin protector, and head gear are some of the equipments used by players. In this section, we will learn about these equipments in detail.</p>
+      <img src="{% static '/images/shoe.jpeg' %}" class="rounded-pill" width="150px" alt="shoe">
+      <h5 class="card-title">1. Cleats or turfs</h5>
+      <p>A very important gear for every football player. These are specially designed shoes with spikes on the bottom that provide great traction on grass.</p>
+      <img src="{% static '/images/socks.jpeg' %}" class="rounded-pill" width="100px" alt="socks">
+      <h5 class="card-title">2. Socks</h5>
+      <p>The socks made for Football are very long and they are meant to cover the shin-guards.</p>
+      <img src="{% static '/images/shin-guards.jpg' %}" class="rounded-0" height="120px" alt="shin-guards">
+      <h5 class="card-title">3. Shin Guards / Shin Pads</h5>
+      <p>These are used to protect the player’s shin. While playing football, opponent players try to injure players by kicking in the shin area. It could be an intentional or unintentional act by the player. Hence, shin guards are a protective equipment.</p>
+      <img src="{% static '/images/ball.jfif' %}" class="rounded-0" height="120px" alt="ball">
+      <h5 class="card-title">4. Soccer Ball</h5>
+      <p>This the main equipment of the game and the total game revolves around this. A Football is made of vulcanized rubber with plastic bladders and covered by plastic covers.</p>
+    </div>
+  </div>
+<br>
+{% comment %}
+  GOTO TOP
+{% endcomment %}
+<br>
+
+<div class="card" style="width: 18rem;">
+  <img src="{% static '/images/position1.jfif' %}" id="pnp" class="card-img-top" alt="players_position">
+  <div class="card-body">
+    
+
+    <h3 class="card-title">Players & Positions</h3>
+    <p class="card-text">Each Football team has 11 players and among these players, 1 is a goalkeeper. Be it the offensive or defensive team, the player’s responsibility is to score a goal for the team and stop the opposing team from scoring a goal. Above image shows various positions of the players on a football field. A list of player positions is also provided.</p>
+    
+    <img src="{% static '/images/goalkey.png' %}" class="card-img-top" alt="keeper">
+    <h5 class="card-title">1. Goalkeeper</h5>
+    <p>Be it a national team or international club, there should be only 11 players per team on the field while playing the game. One of them is the goalkeeper, who is crucial to the success of the team. He is skilled to intercept the ball before a goal is scored by a player of the opponent team. There are additional players seated on the side as substitutes to replace on-field players. Coach is an integral part of the team who coaches every member of the team, lays plans and strategies to score goals and win matches.</p>
+    <h5 class="card-title">2. Defender</h5>
+    <p>The defenders are positioned in front of the goalkeeper and their aim is to stop the opposing team from entering into their goal area.</p>
+    <h5 class="card-title">3. Outside fullback</h5>
+    <p>They play on the left and right flanks and see that the ball doesn’t pass over them. They rarely move from their positions.</p>
+    <h5 class="card-title">4. Central Defenders</h5>
+    <p>They are positioned in the center of the field and are supposed to cover the leading goal scorer of the opposition’s team.</p>
+    <h5 class="card-title">5. Midfielders</h5>
+    <p>hey are the link between the defenders and attackers. They need to be fit and physically very strong than other players on the field as they are the players who run maximum time of the game all around the field. Their responsibility is to enter the opposing team’s area and see that they defend them when the opposing team retains the ball.</p>
+    <h5 class="card-title">6. Forwards</h5>
+    <p>Their main aim is to score goals or to create an easy situation for their teammates to score a goal.</p>
+    <h5 class="card-title">7. Center Forward</h5>
+    <p>The most tactful, dangerous and strong player of the game. They are also called strikers. Strikers are basically the leading goal scorers in the game.</p>
+    
+    <a href="#top" id="bottom" class="btn btn-danger" style="margin-right: 10px;width: 100%;">GoTo Top</a>
+  </div>
+</div>
+{% endblock %}

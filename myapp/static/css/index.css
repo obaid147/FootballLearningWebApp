@@ -1,0 +1,10 @@
+.text{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: darkgray;
+    text-align: center;
+    background-color: black;
+    opacity: 50%;
+    height: 80px;
+    font-size: 60px;
+    text-decoration: none;
+}
