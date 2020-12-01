@@ -5,7 +5,7 @@ from django.http import HttpResponse
 def index(request):
     contents = {
         'title': 'Home',
-        'heading': 'Welcome To Soccer Learning'
+        'heading': 'Soccer Learning'
     }
     return render(request, 'index.html', contents)
 

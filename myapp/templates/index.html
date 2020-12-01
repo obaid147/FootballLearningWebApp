@@ -23,18 +23,22 @@
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-size: cover;
-}
+        }
     </style>
 
 </head>
 <body>
-    <div class=text>
-            {% if heading %}
-            &nbsp;&nbsp;&nbsp; {{ heading }}
-            {% else %}
-            &nbsp;&nbsp;&nbsp; {{ title }}
-            {% endif %}
+<div class=text>
+    {% if heading %}
+        {{ heading }}&nbsp;&nbsp;&nbsp;
+    <div style="display:inline;">
+        <a href="#" class="btn btn-lg btn-info" style="width: 100px; opacity: 70%; color:red;">Login</a>
+        <a href="#" class="btn btn-lg btn-info" style="width: 100px; opacity: 70%; color:red;">Register</a>
     </div>
+    {% else %}
+        {{ title }}
+    {% endif %}
+</div>
 
 <br><br>
 <center>&nbsp;&nbsp;&nbsp;
